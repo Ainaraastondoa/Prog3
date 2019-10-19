@@ -25,6 +25,10 @@ public class ListaDeReproduccion implements ListModel<String> {
 		this.misEscuchadores = misEscuchadores;
 	}
 	
+	public ListaDeReproduccion() {
+		
+	}
+	
 	/**
 	 *  intercambia las dos posiciones (no hace nada si
 	 *  cualquiera de las posiciones es errónea). 

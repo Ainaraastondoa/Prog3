@@ -17,5 +17,6 @@
 	<classpathentry kind="lib" path="C:/Users/usuario/git/Prog3/Prog3/bin/vlcj-3.12.1-javadoc.jar"/>
 	<classpathentry kind="lib" path="C:/Users/usuario/git/Prog3/Prog3/bin/vlcj-3.12.1-sources.jar"/>
 	<classpathentry kind="lib" path="C:/Users/usuario/git/Prog3/Prog3/bin/vlcj-3.12.1-test-sources.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
