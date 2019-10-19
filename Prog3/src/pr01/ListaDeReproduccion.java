@@ -17,6 +17,61 @@ public class ListaDeReproduccion implements ListModel<String> {
 	ArrayList<File> ficherosLista;     // ficheros de la lista de reproducción
 	int ficheroEnCurso = -1;           // Fichero seleccionado (-1 si no hay ninguno seleccionado)
 	
+	
+	public ListaDeReproduccion(ArrayList<File> ficherosLista, int ficheroEnCurso,
+			ArrayList<ListDataListener> misEscuchadores) {
+		this.ficherosLista = ficherosLista;
+		this.ficheroEnCurso = ficheroEnCurso;
+		this.misEscuchadores = misEscuchadores;
+	}
+	
+	/**
+	 *  intercambia las dos posiciones (no hace nada si
+	 *  cualquiera de las posiciones es errónea). 
+	 * @param posi1
+	 * @param posi2
+	 */
+	
+	public void intercambia(int posi1, int posi2) {
+		int pos; 
+		pos = posi1;
+		posi1 = posi2;
+		posi2 = pos; 
+		
+	}
+	 /**
+	  * Devuelve en numero de elementos en la lista
+	  * @return
+	  */
+	public int size() {
+		return ficherosLista.size();
+	}
+	
+	/**
+	 * Añade un fichero al final de la lista 
+	 * @param f
+	 */
+	public void add(File f) {
+		ficherosLista.add(f);		
+	}
+	
+	/**
+	 * Elimina un fichero de la lista, dada su posición 
+	 * @param posi
+	 */
+	
+	public void removeFic(int posi) {
+		ficherosLista.remove(posi);
+	}
+	
+	/**
+	 * Borra la lista 
+	 */
+	
+	public void clear() {
+		ficherosLista.clear();
+	}
+
 	/** Devuelve uno de los ficheros de la lista
 	 * @param posi	Posición del fichero en la lista (de 0 a size()-1)
 	 * @return	Devuelve el fichero en esa posición

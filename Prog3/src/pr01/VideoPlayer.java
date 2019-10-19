@@ -42,7 +42,7 @@ public class VideoPlayer extends JFrame {
 
 	public VideoPlayer() {
 		// Creación de datos asociados a la ventana (lista de reproducción)
-		listaRepVideos = new ListaDeReproduccion();
+		//listaRepVideos = new ListaDeReproduccion();
 		
 		// Creación de componentes/contenedores de swing
 		lCanciones = new JList<String>( listaRepVideos );
