@@ -71,6 +71,14 @@ public class ListaDeReproduccionTest {
 		 lr1.removeFic(0);
 		 
 	 }
+	 
+	 @Test public void addCarpeta() {
+		 String carpetaTest = "test/res/";
+		 String filtroTest = "*Pentatonix*.mp4"; 
+		 ListaDeReproduccion lr = new ListaDeReproduccion();
+		 lr.add( carpetaTest, filtroTest );
+		 fail( "Método sin acabar" );
+		 } 
 	
 	
 

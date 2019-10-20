@@ -1,7 +1,12 @@
 package pr01;
 
 import java.io.File;
+import java.util.regex.Pattern;
 import java.util.ArrayList;
+import java.util.logging.FileHandler;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 import javax.swing.ListModel;
 import javax.swing.event.ListDataEvent;
 import javax.swing.event.ListDataListener;
@@ -15,8 +20,18 @@ import javax.swing.event.ListDataListener;
  */
 public class ListaDeReproduccion implements ListModel<String> {
 	ArrayList<File> ficherosLista;     // ficheros de la lista de reproducción
-	int ficheroEnCurso = -1;           // Fichero seleccionado (-1 si no hay ninguno seleccionado)
-	
+	int ficheroEnCurso = -1;  // Fichero seleccionado (-1 si no hay ninguno seleccionado)
+	String filtroFicheros = "*Pentatonix*.mp4";
+	private static Logger logger = Logger.getLogger( ListaDeReproduccion.class.getName() ); 
+	private static final boolean ANYADIR_A_FIC_LOG = false; // poner true para no sobreescribir
+	static {
+	 try {
+	 logger.addHandler( new FileHandler(
+	 ListaDeReproduccion.class.getName()+".log.xml", ANYADIR_A_FIC_LOG ));
+	 } catch (SecurityException | IOException e) {
+	 logger.log( Level.SEVERE, "Error en creación fichero log" );
+	 }
+	} 
 	
 	public ListaDeReproduccion(ArrayList<File> ficherosLista, int ficheroEnCurso,
 			ArrayList<ListDataListener> misEscuchadores) {
@@ -75,6 +90,8 @@ public class ListaDeReproduccion implements ListModel<String> {
 	public void clear() {
 		ficherosLista.clear();
 	}
+	
+	
 
 	/** Devuelve uno de los ficheros de la lista
 	 * @param posi	Posición del fichero en la lista (de 0 a size()-1)
@@ -100,7 +117,12 @@ public class ListaDeReproduccion implements ListModel<String> {
 	 */
 	public int add(String carpetaFicheros, String filtroFicheros) {
 		// TODO: Codificar este método de acuerdo a la práctica (pasos 3 y sucesivos)
-		filtroFicheros = filtroFicheros.replaceAll( "\\.", "\\\\." );  // Pone el símbolo de la expresión regular \. donde figure un .
+		logger.log( Level.INFO, "Añadiendo ficheros con filtro " + filtroFicheros ); 
+		for (File file : ficherosLista) {
+			filtroFicheros = filtroFicheros.replaceAll( "\\.", "\\\\." );// Pone el símbolo de la expresión regular \. donde figure un .	
+			logger.log( Level.INFO, "Valor del filtro" + filtroFicheros ); 
+		}
+		
 		return 0;
 	}
 	
