@@ -26,7 +26,7 @@ public class ListaDeReproduccion implements ListModel<String> {
 	}
 	
 	public ListaDeReproduccion() {
-		
+		ficherosLista = new ArrayList<File>();
 	}
 	
 	/**

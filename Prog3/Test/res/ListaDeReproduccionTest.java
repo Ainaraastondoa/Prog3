@@ -48,21 +48,27 @@ public class ListaDeReproduccionTest {
 	 // métodos para probar el resto de métodos de la clase ListaDeReproduccion
 	 @Test
 	 public void intercambiaTest() {
-		 
+		 int pos = 0;
+		 int posi1 = 3;
+		 int posi2 = 2;
+		 assertEquals(pos, posi1);
+		 assertEquals(posi1, posi2); 
 	 }
 	 
 	 @Test
 	 public void sizeTest() {
-		 
+		 lr1.getSize();	 
 	 }
 	 
 	 @Test
 	 public void addTest() {
+		 lr1.add(FIC_TEST1);
 		 
 	 }
 	 
 	 @Test
 	 public void removeTest() {
+		 lr1.removeFic(0);
 		 
 	 }
 	
