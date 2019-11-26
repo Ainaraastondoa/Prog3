@@ -3,13 +3,6 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="Test"/>
-	<classpathentry kind="lib" path="C:/Users/usuario/eclipse-workspace/Practica1(Prog3)/bin/vlcj-3.12.1/jna-5.2.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/usuario/eclipse-workspace/Practica1(Prog3)/bin/vlcj-3.12.1/jna-platform-5.2.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/usuario/eclipse-workspace/Practica1(Prog3)/bin/vlcj-3.12.1/slf4j-api-1.7.25.jar"/>
-	<classpathentry kind="lib" path="C:/Users/usuario/eclipse-workspace/Practica1(Prog3)/bin/vlcj-3.12.1/vlcj-3.12.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/usuario/eclipse-workspace/Practica1(Prog3)/bin/vlcj-3.12.1/vlcj-3.12.1-javadoc.jar"/>
-	<classpathentry kind="lib" path="C:/Users/usuario/eclipse-workspace/Practica1(Prog3)/bin/vlcj-3.12.1/vlcj-3.12.1-sources.jar"/>
-	<classpathentry kind="lib" path="C:/Users/usuario/eclipse-workspace/Practica1(Prog3)/bin/vlcj-3.12.1/vlcj-3.12.1-test-sources.jar"/>
 	<classpathentry kind="lib" path="C:/Users/usuario/git/Prog3/Prog3/bin/jna-5.2.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/usuario/git/Prog3/Prog3/bin/jna-platform-5.2.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/usuario/git/Prog3/Prog3/bin/slf4j-api-1.7.25.jar"/>
